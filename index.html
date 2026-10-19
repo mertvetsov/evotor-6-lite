@@ -6,6 +6,7 @@
   <title>«Эвотор 6 lite» по акции «Касса за кассу»</title>
   <meta name="description" content="Обменяйте старую кассу на новый «Эвотор 6 lite» и сэкономьте 17 500 ₽. С 1 июля 2026 года кассы без модуля ТС ПИоТ нельзя использовать для продажи маркированных товаров." />
   <meta name="theme-color" content="#2a201e" />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f05023'/%3E%3Cpath d='M9 11.5a7.5 7.5 0 1 1 0 9h6' stroke='white' stroke-width='3.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preload" as="image" href="./img/hero-hand.webp" imagesrcset="./img/hero-hand-640.webp 640w, ./img/hero-hand.webp 1100w" imagesizes="(min-width: 1100px) 43vw, (min-width: 768px) 46vw, 92vw" fetchpriority="high" />
   <script type="module" src="./src/main.js"></script>
@@ -231,11 +232,11 @@
           <h2 class="h2 h2--light" data-split>Ваш бизнес<br>заслуживает перейти<br>на «Эвотор 6&nbsp;lite»</h2>
           <p class="apply__lead" data-reveal>Заполните заявку — и мы поможем обменять кассу</p>
         </div>
-        <form class="form" novalidate data-form>
+        <form class="form" novalidate autocomplete="off" data-form>
           <div class="form__grid">
-            <label class="field"><span class="sr">Ваше имя</span><input name="name" type="text" autocomplete="name" placeholder="Ваше имя" required /><span class="field__err" role="alert"></span></label>
-            <label class="field"><span class="sr">Ваш город</span><input name="city" type="text" autocomplete="address-level2" placeholder="Ваш город" required /><span class="field__err" role="alert"></span></label>
-            <label class="field"><span class="sr">Телефон</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 (000) 00 00" required data-phone /><span class="field__err" role="alert"></span></label>
+            <label class="field"><span class="sr">Ваше имя</span><input name="name" type="text" autocomplete="off" placeholder="Ваше имя" required /><span class="field__err" role="alert"></span></label>
+            <label class="field"><span class="sr">Ваш город</span><input name="city" type="text" autocomplete="off" placeholder="Ваш город" required /><span class="field__err" role="alert"></span></label>
+            <label class="field"><span class="sr">Телефон</span><input name="phone" type="tel" inputmode="tel" autocomplete="off" placeholder="+7 900 (000) 00 00" required data-phone /><span class="field__err" role="alert"></span></label>
             <label class="field"><span class="sr">Модель старой кассы</span><input name="model" type="text" placeholder="Модель старой кассы" /><span class="field__err" role="alert"></span></label>
             <label class="field"><span class="sr">ИНН</span><input name="inn" type="text" inputmode="numeric" placeholder="ИНН" maxlength="12" required data-inn /><span class="field__err" role="alert"></span></label>
             <div class="agree">

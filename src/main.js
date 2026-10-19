@@ -368,13 +368,16 @@ function form() {
       if (!reduced) gsap.fromTo(submit, { x: -6 }, { x: 0, duration: 0.6, ease: 'elastic.out(1, 0.3)' });
       return;
     }
+    // Visual prototype: nothing is sent or stored. The fields are cleared and the
+    // visitor is told plainly that no application went anywhere.
     submit.disabled = true;
-    $('.btn__label', submit).textContent = 'Отправляем…';
+    $('.btn__label', submit).textContent = 'Проверяем…';
     status.textContent = '';
-    await new Promise((r) => setTimeout(r, 1100));
+    await new Promise((r) => setTimeout(r, 700));
+    f.reset();
     f.classList.add('is-sent');
-    $('.btn__label', submit).textContent = 'Заявка отправлена';
-    status.textContent = 'Спасибо! Мы свяжемся с вами, чтобы обсудить обмен кассы.';
+    $('.btn__label', submit).textContent = 'Демо-режим';
+    status.textContent = 'Это прототип: заявка не отправлена, данные нигде не сохраняются.';
   });
 }
 
